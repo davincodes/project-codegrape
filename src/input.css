@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+
+@theme{
+    --container-sm: 480px;
+    --container-md: 768px;
+    --container-lg: 976px;
+    --container-xl: 1440px;
+
+
+    --color-grapes: #c471ed;
+    --color-brightPink: #ff00f4;
+}
