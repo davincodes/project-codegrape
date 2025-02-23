@@ -178,19 +178,45 @@
             <!-- Image recognition -->
         <div class="relative text-center p-10">
             <button
-                class="brightness-150 dark:brightness-100 group hover:shadow-lg hover:shadow-grapes transition ease-in-out hover:scale-105 p-1 rounded-xl bg-grapes"
+                class="brightness-150 dark:brightness-100 group hover:shadow-lg hover:shadow-brightPink transition ease-in-out hover:scale-105 p-1 rounded-xl bg-brightPink"
                 onclick="document.getElementById('myFileInput').click()"
                 >
                 <div class="px-6 py-2 backdrop-blur-xl bg-white rounded-xl font-bold w-full h-full">
-                    <div class="group-hover:scale-100 group-hover:text-brightPink text-grapes gap-1 inline">
-                </svg>
-                    Analyze
+                    <div class="group-hover:text-black text-black gap-1 inline">
+                    Detect a Disease
+                    </div>
+                </div>
+            </button>
+            <input id="myFileInput" type="file" onchange="onFileChange(event)" style="display:none;" />
+        </div>
+
+
+        
+
+        <div class="recognition" id="recognition">
+            <div class="section">
+                <h2 class="text-2xl font-bold text-white text-center m-5 text white" id="label-container">
+                </h2>
+                <div class="recognition-all-list">
+                    <div class="recognition-list w-60" id="image-container">
+                    </div>
+                    <div>
+                        <div class="recognition-list text-white" id="definition-container">
+                        </div>
+                        <div class="recognition-list" id="cause-container">
+                        </div>
+                        <div class="recognition-list" id="treatment-container">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-</button>
-<input id="myFileInput" type="file" onchange="onFileChange(event)" style="display:none;" />
-
     </section>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
