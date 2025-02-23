@@ -8,14 +8,14 @@
     <style>
         /* *{
             border: 1px solid black;
-        } */
+        }  */
     </style>
 </head>
 <body>
     <nav class="relative container mx-auto p-0 ">
         <div class="flex justify-between items-center">
             <div class="">
-                <img src="/img/logo.png" width="100px">
+                <img src="/img/logo.png" width="130px">
             </div>
             <!-- Menu items -->
             <div class="hidden md:flex space-x-10">
@@ -34,41 +34,72 @@
     </nav>
 
     <section id="hero">
-        <div class="container flex flex-col-reverse mx-auto items-center md:flex-row md:space-y-0">
-            <div class="flex flex-col m-1 md:text-left mx-4 md:items-start p-5">
-                <h1 class="max-w-md text-3xl mt-4 text-brightPink  font-bold">
+        <div class="container flex flex-col-reverse mx-auto items-center my-5 md:pb-10 md:flex-row md:space-y-0">
+            <div class="flex flex-col md:text-left mx-4 md:items-start">
+                <h1 class="max-w-md text-6xl mt-4 text-brightPink  font-bold">
                     CODEGRAPE
                 </h1>
-                <h2 class="text-2xl font-bold">
+                <h2 class="text-3xl font-bold">
                     A Deep-Learning Based Image Recognition System for Automated Detection of Grape Leaf Diseases.
                 </h2>
             </div>
             <div class="">
-                <img width="700px" src="/img/hero.png" alt="">
+                <img width="1000px" src="/img/hero.png" alt="">
             </div>
         </div>
     </section>
 
-    <section id="service">
-        <div class="mt-10 border bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
-            <div class="flex flex-col p-5 md:mx-12">
-                <h1 class="text-6xl text-start text-white p-1 font-bold">
-                    SERVICE
-                </h1>
-                <p class="text-white my-3 md:w-250">
-                    I have developed a web-based tool powered by Convolutional Neural Networks (CNN) to assist grape farmers and viticulturists in diagnosing grape leaf diseases. The platform allows users to upload images of their grape leaves and receive an accurate diagnosis. With an intuitive interface, the tool makes it easy to upload, classify, and access information about potential diseases.<br>
-                    <br>After selecting a photo, the system promptly analyzes the image to identify any diseases affecting the grape crop. It then provides a detailed description of the identified disease, explaining its characteristics and potential impact on crop yield and quality. Additionally, the tool suggests possible treatments based on current research and expert recommendations.
-                </p>
+    <section id="codegrape">
+        <div class="items-center p-9 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
+            <h1 class="text-6xl font-bold text-white text-center">
+                HOW TO USE CODEGRAPE
+            </h1>
+            <p class="p-5 text-center text-white">
+                Upload an image from your computer or mobile device by clicking the upload button to locate the image you wish to search for.
+            </p>
+
+            <!-- Image recognition -->
+        <div class="relative text-center m-5">
+            <button
+                class="brightness-150 dark:brightness-100 group hover:shadow-lg hover:shadow-brightPink transition ease-in-out hover:scale-105 p-1 rounded-xl bg-brightPink"
+                onclick="document.getElementById('myFileInput').click()"
+                >
+                <div class="px-6 py-2 backdrop-blur-xl bg-white rounded-xl font-bold w-full h-full">
+                    <div class="group-hover:text-black text-black gap-1 inline">
+                    Identify a Disease
+                    </div>
+                </div>
+            </button>
+            <input id="myFileInput" type="file" onchange="onFileChange(event)" style="display:none;" />
+        </div>
+
+        <div class="recognition" id="recognition">
+            <div class="section">
+                <h2 class="text-2xl font-bold text-white text-center m-5 text white" id="label-container">
+                </h2>
+                <div class="recognition-all-list">
+                    <div class="recognition-list w-60" id="image-container">
+                    </div>
+                    <div>
+                        <div class="recognition-list text-white" id="definition-container">
+                        </div>
+                        <div class="recognition-list" id="cause-container">
+                        </div>
+                        <div class="recognition-list" id="treatment-container">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
 
     <section id="about">
         <div class="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 text-4xl text-center mt-10 text-white md:text-6xl font-bold md:mx-15 md:my-15">
             ABOUT THE RESEARCHER
         </div>
         <p class="m-4 md:mx-12">
-            As a student of the University of the Cordilleras, I am exploring agricultural technology and augmentation approaches to develop a reliable solution for the challenges faced by grape farmers. Imagine a world where farmers and viticulturists no longer have to manually inspect their grape crops for signs of disease. Instead, they can simply take a photo with their smartphone and use a web-based tool powered by Convolutional Neural Networks (CNN) to identify diseases in their crops.
+            As a student of the University of the Cordilleras, I am exploring agricultural technology and augmentation approaches to develop a reliable solution for the challenges faced by grape farmers. To address this, I have developed a web-based tool powered by Convolutional Neural Networks (CNN) to assist in diagnosing grape leaf diseases. The platform allows users to upload images of their grape leaves and receive an accurate diagnosis. With an intuitive interface, the tool simplifies the process, making it easy to upload, classify, and access information about potential diseases.    
         </p>
         <div class="flex rounded-xl items-center h-auto flex-wrap mx-auto my-32 lg:my-0">
             <!--Main Col-->
@@ -165,53 +196,7 @@
             </div>
         </div>
     </section>
-
-    <section id="codegrape">
-        <div class="items-center p-9 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
-            <h1 class="text-6xl font-bold text-white text-center">
-                HOW TO USE CODEGRAPE
-            </h1>
-            <p class="p-5 text-center text-white">
-                Upload an image from your computer or mobile device by clicking the upload button to locate the image you wish to search for.
-            </p>
-
-            <!-- Image recognition -->
-        <div class="relative text-center p-10">
-            <button
-                class="brightness-150 dark:brightness-100 group hover:shadow-lg hover:shadow-brightPink transition ease-in-out hover:scale-105 p-1 rounded-xl bg-brightPink"
-                onclick="document.getElementById('myFileInput').click()"
-                >
-                <div class="px-6 py-2 backdrop-blur-xl bg-white rounded-xl font-bold w-full h-full">
-                    <div class="group-hover:text-black text-black gap-1 inline">
-                    Detect a Disease
-                    </div>
-                </div>
-            </button>
-            <input id="myFileInput" type="file" onchange="onFileChange(event)" style="display:none;" />
-        </div>
-
-
-        
-
-        <div class="recognition" id="recognition">
-            <div class="section">
-                <h2 class="text-2xl font-bold text-white text-center m-5 text white" id="label-container">
-                </h2>
-                <div class="recognition-all-list">
-                    <div class="recognition-list w-60" id="image-container">
-                    </div>
-                    <div>
-                        <div class="recognition-list text-white" id="definition-container">
-                        </div>
-                        <div class="recognition-list" id="cause-container">
-                        </div>
-                        <div class="recognition-list" id="treatment-container">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     
     
 
