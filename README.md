@@ -1,8 +1,6 @@
 
 ![codegrape](https://github.com/user-attachments/assets/1b3dd5c4-b94f-4ab6-9196-4127e8d41a14)
 
-![image rec](https://github.com/user-attachments/assets/8bcf4549-61ff-4f00-bbd0-adacebbb73b0)
-
 
 
 # CODEGRAPE : A DEEP LEARNING BASED IMAGE RECOGNITION SYSTEM FOR AUTOMATED DETECTION OF GRAPE LEAF DISEASES
