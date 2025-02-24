@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Codegrape</title>
     <link href="./output.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         /* *{
             border: 1px solid black;
@@ -12,21 +13,20 @@
     </style>
 </head>
 <body>
-    <nav class="relative container mx-auto p-0 ">
+    <nav class="relative container mx-auto p-0">
         <div class="flex justify-between items-center">
             <div class="">
                 <img src="/img/logo.png" width="130px">
             </div>
             <!-- Menu items -->
-            <div class="hidden md:flex space-x-10">
+            <div class="hidden md:flex space-x-10 font-bold">
                 <a href="" class="hover:text-brightPink">Home</a>
-                <a href="" class="hover:text-brightPink">Service</a>
-                <a href="" class="hover:text-brightPink">About</a>
-                <a href="" class="hover:text-brightPink">Contact</a>
+                <a href="#about" class="hover:text-brightPink">About</a>
+                <a href="#footer" class="hover:text-brightPink">Contact</a>
             </div>
             <!-- Button Analyze Now -->
             <div class="">
-                <a href=""class="hidden text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 hover:bg-brightPink font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 md:block">
+                <a href="#codegrape"class="hidden text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 hover:bg-brightPink font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 md:block">
                     Analyze Now
                 </a>
             </div>
@@ -34,7 +34,7 @@
     </nav>
 
     <section id="hero">
-        <div class="container flex flex-col-reverse mx-auto items-center my-5 md:pb-10 md:flex-row md:space-y-0">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="container flex flex-col-reverse mx-auto items-center my-5 md:pb-10 md:flex-row md:space-y-0">
             <div class="flex flex-col md:text-left mx-4 md:items-start">
                 <h1 class="max-w-md text-6xl mt-4 text-brightPink  font-bold">
                     CODEGRAPE
@@ -43,18 +43,25 @@
                     A Deep-Learning Based Image Recognition System for Automated Detection of Grape Leaf Diseases.
                 </h2>
             </div>
-            <div class="">
+            <div data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1500" class="">
                 <img width="1000px" src="/img/hero.png" alt="">
             </div>
         </div>
     </section>
 
     <section id="codegrape">
-        <div class="items-center p-9 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
-            <h1 class="text-6xl font-bold text-white text-center">
+        <div class="w-full h-screen content-center items-center p-9 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
+            <h1 data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500" class="text-6xl font-bold text-white text-center">
                 HOW TO USE CODEGRAPE
             </h1>
-            <p class="p-5 text-center text-white">
+            <p data-aos="zoom-in-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500" class="p-5 text-center text-white">
                 Upload an image from your computer or mobile device by clicking the upload button to locate the image you wish to search for.
             </p>
 
@@ -97,129 +104,138 @@
 
 
     <section id="about">
-        <div class="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 text-4xl text-center mt-10 text-white md:text-6xl font-bold md:mx-15 md:my-15">
-            ABOUT THE RESEARCHER
-        </div>
-        <p class="m-4 md:mx-12">
-            As a student of the University of the Cordilleras, I am exploring agricultural technology and augmentation approaches to develop a reliable solution for the challenges faced by grape farmers. To address this, I have developed a web-based tool powered by Convolutional Neural Networks (CNN) to assist in diagnosing grape leaf diseases. The platform allows users to upload images of their grape leaves and receive an accurate diagnosis. With an intuitive interface, the tool simplifies the process, making it easy to upload, classify, and access information about potential diseases.    
-        </p>
-        <div class="flex rounded-xl items-center h-auto flex-wrap mx-auto my-32 lg:my-0">
-            <!--Main Col-->
-            <div id="profile"
-                class="w-full rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
-    
-                <div class="p-4 md:p-12 text-center lg:text-left">
-                    <!-- Image for mobile view-->
-                    <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
-                        style="background-image: url('https://davincodes.vercel.app/1.png')"></div>
-    
-                    <h1 class="text-3xl font-bold pt-8 lg:pt-0 md:text-start">ARVIN T. ANTONIO</h1>
-                    <div class="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-black opacity-25"></div>
-                    <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
-                        <svg class="h-4 fill-current text-grapes pr-4" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20">
-                            <path
-                                d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
-                        </svg> Software Engineer
-                    </p>
-                    <p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
-                        <svg class="h-4 fill-current text-grapes pr-4" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20">
-                            <path
-                                d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z" />
-                        </svg> Benguet, Baguio City 2600
-                    </p>
-                    <p class="pt-8 text-sm">I enjoy solving problems and learning new skills. My passion is creating code that follows best practices. I'm always seeking challenges and opportunities to grow as a developer.</p>
-    
-                    <div class="pt-12 pb-8">
-                        <a href="" class="shadow bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
-                            Get In Touch
-                        </a>
-                    </div>
-    
-                    <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-                        <a class="link" href="#" data-tippy-content="@facebook_handle">
-                            <svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Facebook</title>
-                                <path
-                                    d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
-                            </svg>
-                        </a>
-                        <a class="link" href="#" data-tippy-content="@twitter_handle">
-                            <svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Twitter</title>
-                                <path
-                                    d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
-                            </svg>
-                        </a>
-                        <a class="link" href="#" data-tippy-content="@github_handle">
-                            <svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>GitHub</title>
-                                <path
-                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                            </svg>
-                        </a>
-                        <a class="link" href="#" data-tippy-content="@unsplash_handle">
-                            <svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Unsplash</title>
-                                <path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z" />
-                            </svg>
-                        </a>
-                        <a class="link" href="#" data-tippy-content="@dribble_handle">
-                            <svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Dribbble</title>
-                                <path
-                                    d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
-                            </svg>
-                        </a>
-                        <a class="link" href="#" data-tippy-content="@instagram_handle">
-                            <svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Instagram</title>
-                                <path
-                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
-                            </svg>
-                        </a>
-                        <a class="link" href="#" data-tippy-content="@youtube_handle">
-                            <svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>YouTube</title>
-                                <path
-                                    d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
-                            </svg>
-                        </a>
+        <div class="w-full xl:h-screen h-[100%]"> 
+                <div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1000" class="">
+                    <div class="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 text-4xl text-center mt-10 text-white md:text-6xl font-bold md:mx-15 md:my-15">
+                        ABOUT THE RESEARCHER
                     </div>
                 </div>
-            </div>
-        </div>
+                
+                <p data-aos="fade-up"
+                data-aos-duration="1500" class="mx-4 mt-4 md:mx-16 pb-10">
+                    As a student of the University of the Cordilleras, I am exploring agricultural technology and augmentation approaches to develop a reliable solution for the challenges faced by grape farmers. One of the key issues in the grape farms of Bauang, La Union, is the difficulty in identifying grape leaf diseases, which can significantly impact crop yield and quality. Farmers often struggle to recognize specific diseases, leading to delayed or ineffective treatments that harm productivity.<br><br>
+                    To address this, I have developed a web-based tool powered by Convolutional Neural Networks (CNN) to assist in diagnosing grape leaf diseases. Designed specifically to help farmers in Bauang, La Union, this system allows users to upload images of their grape leaves and receive an accurate diagnosis. By leveraging advanced image recognition, the tool simplifies the disease identification process, providing farmers with timely and reliable information.<br><br>
+                    With an intuitive interface, the platform makes it easy to upload, classify, and access detailed descriptions of potential diseases. In addition to diagnosis, the system offers expert-recommended treatment options, helping farmers take immediate action to protect their crops. This technology aims to bridge the gap in disease identification and empower grape farmers with the tools they need to ensure healthier, more productive vineyards.
+                </p>
+                <div
+                class="lg:mt-10 py-8 px-8 max-w-sm mx-auto space-y-2 sm:py-4 sm:flex items-center sm:space-y-0 sm:space-x-6 md:mx-0 lg:items-start md:ms-10">
+                    <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="https://davincodes.vercel.app/1.png" alt="">
+                        <div class="text-center space-y-2 sm:text-left">
+                            <div class="space-y-0.5 mt-3.5 sm:ms-5">
+                                <p class="md:ms-3 text-lg text-black font-semibold">
+                                    ARVIN T. ANTONIO
+                                </p>
+                                <p class="md:ms-3 text-slate-500 font-medium">
+                                    Programmer / Researcher
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-10 lg:mt-20"> 
+                        <div class="mt-6 pb-16 lg:pb-0 w-4/5  mx-auto flex flex-wrap items-center justify-between">
+                            <a class="link" href="https://www.facebook.com/Davincodes" data-tippy-content="@facebook_handle">
+                                <svg class="h-6 fill-current text-gray-600 hover:text-brightPink" role="img" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Facebook</title>
+                                    <path
+                                        d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
+                                </svg>
+                            </a>
+                            <a class="link" href="https://x.com/superarben" data-tippy-content="@twitter_handle">
+                                <svg class="h-6 fill-current text-gray-600 hover:text-brightPink" role="img" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Twitter</title>
+                                    <path
+                                        d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+                                </svg>
+                            </a>
+                            <a class="link" href="https://github.com/davincodes" data-tippy-content="@github_handle">
+                                <svg class="h-6 fill-current text-gray-600 hover:text-brightPink" role="img" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </a>
+                            <a class="link" href="https://www.instagram.com/davincodes/" data-tippy-content="@instagram_handle">
+                                <svg class="h-6 fill-current text-gray-600 hover:text-brightPink" role="img" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Instagram</title>
+                                    <path
+                                        d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                                </svg>
+                            </a>
+
+                            
+
+                            <a class="link" href="https://www.youtube.com/@arvinantonio3774" data-tippy-content="@youtube_handle">
+                                <svg class="h-6 fill-current text-gray-600 hover:text-brightPink" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <title>YouTube</title>
+                                    <path
+                                        d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
     </section>
 
-
-
-    <!-- <section id="service">
-        <div class="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
-            <div class="container mt-10 mx-auto">
-                <div class="flex flex-col p-5 md:mx-12">
-                    <h1 class="text-6xl text-start text-white font-bold">
-                        SERVICE
-                    </h1>
-                    <p class="text-white my-3">
-                        I have developed a web-based tool powered by Convolutional Neural Networks (CNN) to assist grape farmers and viticulturists in diagnosing grape leaf diseases. The platform allows users to upload images of their grape leaves and receive an accurate diagnosis. With an intuitive interface, the tool makes it easy to upload, classify, and access information about potential diseases.<br>
-                        <br>After selecting a photo, the system promptly analyzes the image to identify any diseases affecting the grape crop. It then provides a detailed description of the identified disease, explaining its characteristics and potential impact on crop yield and quality. Additionally, the tool suggests possible treatments based on current research and expert recommendations.
-                    </p>
+    <footer id="footer" class="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
+        <div class="w-full flex-col px-6 pt-20 lg:flex lg:px-10 xl:px-24">
+            <div class="text-zinc-600 cursor-default lg:flex lg:flex-row lg:gap-x-16">
+            <div>
+                <h2 class="text-2xl text-white font-mono font-bold">CODEGRAPE</h2>
+                <ul class="mt-4 text-sm flex flex-col items-start justify-start gap-2">
+                <li class="flex flex-row items-start">
+                    <span><svg aria-hidden="true" viewBox="0 0 1024 1024" class="w-4 h-4 mr-1 mt-1 fill-white" preserveAspectRatio="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M517.802667 612.181333c96.298667-5.12 152.874667-91.946667 181.205333-168.704 45.226667-10.154667 45.226667-71.552 11.349333-97.109333 8.021333-79.744 34.816-194.090667-65.28-198.314667-27.093333-1.109333-43.093333-26.496-145.834666-18.474666-62.592 5.034667-125.056 15.104-163.712 49.450666-39.594667 35.2-37.248 103.296-27.093334 172.458667-34.048 20.48-22.741333 81.834667 22.570667 97.152 28.288 76.629333 90.538667 168.618667 186.794667 163.541333z m114.133333 17.834667c-31.232 58.154667-49.066667 126.848-80.298667 179.669333-4.437333-36.992-3.84-61.269333-4.437333-137.386666h-75.776c4.437333 95.146667 4.437333 95.146667-4.522667 137.386666-22.314667-58.112-44.544-126.805333-75.776-179.626666-133.717333 21.12-231.850667 84.522667-236.245333 264.192h713.386667c-0.085333-179.669333-102.656-243.072-236.373334-264.234667z"></path></svg></span>
+                    <p class="font-inter text-white">Codegrape co.</p>
+                </li>
+                <li class="flex flex-row items-start">  
+                    <span>
+                    <svg aria-hidden="true" viewBox="0 0 1024 1024" class="w-4 h-4 mr-1 mt-1 fill-white" preserveAspectRatio="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M513.2 898.3c-106.4 0-206.6-9.2-282.3-26.1-88.9-19.9-137.4-47.5-132-83.3 3.7-25 19.5-37.2 58.5-51.6 32.6-12 96.8-27.2 148.5-35.6 12-2 21.4 5.4 23.4 17.3 2 12-6.4 21-18.3 23-44.4 7.2-105.8 20.8-132 31.2-29 11.5-26.2 14.8-26.2 17 0 1.8 0.6 8.9 20.4 18.2 19.2 9 47 17.4 80.4 24.5 71.7 15 165.6 23.3 264.7 23.3 99 0 193-8.3 264.7-23.3 33.5-7 61.3-15.5 80.4-24.5 19.9-9.2 16.2-16.2 17-17.8-1-2-3.7-5.9-32.7-17.3-26.2-10.4-82.4-23.7-126.7-30.9-12-2-20.3-10.3-18.4-22.3 2-12 12.4-20.3 24.4-18.4 51.7 8.3 109 24.3 142 35.5 39.3 13.3 54.8 26.6 58.6 51.8 5.4 35.8-43.2 63.5-132.2 83.2-75.6 16.9-175.8 26.1-282.2 26.1z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M510.8 98.2c-134.1 0-239.5 108.4-239.3 242.4 0 4 0.1 8.2 0.3 12.3 1.4 28.6 10.2 57.2 21.4 83.4v0.1l17.9 34.5c1.5 2.9 148.7 277.2 165.1 303.1 9.2 14.5 24.6 20.7 35.5 20.7 10.6 0 27.6-5.7 35.3-20.7 12.3-24 175.8-303.1 175.8-303.1s15.2-26.2 18.7-34.6c13.4-31.7 18.9-49.2 20.3-83.7 0.1-3.6 0.2-9.4 0.2-12.3C761.9 206 644.9 98.2 510.8 98.2z m2.4 368.9c-74.2 0-134.3-60.1-134.3-134.3 0-74.2 60.1-134.3 134.3-134.3 74.2 0 134.3 60.1 134.3 134.3 0 74.2-60.1 134.3-134.3 134.3z"></path></svg>
+                    </span>
+                    <p class="font-inter text-white">Baguio City, Benguet, 2600, Philippines</p>
+                </li>
+                </ul>
+            </div>
+            <div class="mt-4 md:mt-0 lg:mt-0 flex flex-row flex-wrap lg:flex-nowrap lg:justify-center gap-4 lg:gap-x-24">
+                <div class="flex flex-col">
+                <h2 class="font-mono font-bold text-white text-lg">Contact</h2>
+                <ul class="mt-4 grid gap-2 ">
+                    <li class="flex items-start text-sm">
+                    <span><svg aria-hidden="true" viewBox="0 0 1024 1024" class="w-4 h-4 mr-1 mt-1 fill-white preserveAspectRatio="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M702.229 505.85l257.369 208.406V297.444zM599.854 588.749c-25.344 20.528-56.423 30.791-87.498 30.791-31.08 0-62.155-10.264-87.513-30.796l-53.778-43.556L65.846 792.386c2.945 22.208 13.831 41.923 29.75 56.193 7.592 6.805 16.341 12.319 25.868 16.329 10.846 4.566 22.712 7.164 35.207 7.164h711.225c15.817 0 30.632-4.139 43.612-11.24 9.122-4.99 17.365-11.399 24.295-19.056 12.221-13.502 20.449-30.628 22.931-49.554l-305.078-247.04-53.802 43.567zM64.969 297.272v417.157l257.529-208.577z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M419.633 505.853l43.688 35.383c28.408 23.005 69.652 23.005 98.061 0l43.699-35.386 48.574-39.333 303.38-245.664c-9.591-40.379-45.87-70.543-89.139-70.543H156.671c-43.219 0-79.46 30.093-89.103 70.4l303.497 245.807 48.568 39.336z"></path></svg></span><a
+                        target="javascript:;" class="text-left text-white break-words hover:underline hover:text-zinc-800"
+                        href="javascript:;">itscodegrape@gmail.com</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="flex flex-col">
+                <h2 class="font-mono font-bold text-white text-lg">Company</h2>
+                <ul class="mt-4 grid gap-2 grid-cols-2">
+                    <li class="flex items-start text-sm"><span></span><a target="javascript:;"
+                        class="text-left text-white break-words hover:underline hover:text-white"
+                        href="/services">Services</a></li>
+                    <li class="flex items-start text-sm"><span></span><a target="javascript:;"
+                        class="text-left text-white break-words hover:underline hover:text-white"
+                        href="">Sitemap</a></li>
+                </ul>
                 </div>
             </div>
+            </div>
+            <div class="w-full mt-10 py-10 border-t border-white font-inter text-center text-xs text-white">Copyright
+            <!-- -->
+            <!-- --> © 2025 Grape Leaf Disease Detection System. All Rights Reserved.
+            </div>
         </div>
-    </section> -->
+    </footer>
     
-    
-    
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script src="script.js"></script>

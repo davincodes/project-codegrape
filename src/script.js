@@ -1,3 +1,5 @@
+AOS.init();
+
 
 const fileInput = document.querySelector('#myFileInput');
 const preloader = document.querySelector('#preloader');
@@ -99,7 +101,7 @@ switch (index) {
     case 3:
     return "HEALTHY";
     case 4:
-    return "Unknown";
+    return "UNKNOWN";
 }
 }
 
@@ -124,8 +126,8 @@ const causeContainer = document.getElementById("cause-container");
 causeContainer.innerHTML = ""; // clear the container before showing new results
 
 
-if (className === "Unknown") {
-    causeContainer.innerHTML = "Unknown";
+if (className === "UNKNOWN") {
+    causeContainer.innerHTML = "UNKNOWN";
 } else if (className === "BLACK MEASLES") {
     treatmentContainer.innerHTML = "Possibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa mga tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
 } else if (className === "LEAF BLIGHT") {
@@ -139,7 +141,7 @@ if (className === "Unknown") {
 }
 
 
-if (className === "Unknown") {
+if (className === "UNKNOWN") {
     causeContainer.innerHTML = "";
 } else if (className === "BLACK MEASLES") {
     causeContainer.innerHTML = "Sanhi:<br><br>Ang Black Measles ay sanhi ng fungus na Guignardia bidwellii.<br><br>Ang Guignardia bidwellii ay isang uri ng fungus o kabute na sanhi ng sakit sa ubas";
