@@ -203,6 +203,9 @@
   }
 }
 @layer utilities {
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
