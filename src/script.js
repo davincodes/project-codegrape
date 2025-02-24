@@ -56,11 +56,11 @@ for (let i = 0; i < text.length; i++) {
 const URL = "https://teachablemachine.withgoogle.com/models/isVUVdBdN/";
 
 const labelDefinitions = {
-"Black Measles": "Ang<span> Black Measles </span>ay isang fungal na sakit na nakaka-apekto sa mga puno ng ubas, na nagdudulot ng maliit na itim na spots sa mga dahon, tangkay, at prutas. Ito ay sanhi ng fungus na Phomopsis viticola. Ang sakit na ito ay maaaring magpahina sa halaman, magbawas ng produksyon at kalidad ng prutas, at posibleng magpatay ng puno sa mga matinding kaso. Ang fungus ay naiiwan sa mga namatay na bahagi ng halaman at kumakalat sa pamamagitan ng ulan at hangin.",
-"Leaf Blight": "Ang leaf blight ay isang fungal na sakit na nakaka-apekto sa mga puno ng ubas, na nagdudulot ng mga di-regular na brown spots sa mga dahon. Ito ay sanhi ng fungus na Guignardia bidwellii. Ang sakit na ito ay maaaring magpahina sa halaman, magbawas ng produksyon at kalidad ng prutas, at posibleng magpatay ng puno sa mga matinding kaso. Ang fungus ay naiiwan sa mga namatay na bahagi ng halaman at kumakalat sa pamamagitan ng ulan at hangin.",
-"Healthy": "Ang Ubas ay malusog.",
-"Black Rot": "Ang black rot ay isang fungal na sakit na nakaka-apekto sa mga puno ng ubas, na nagdudulot ng mga maitim na spots sa mga dahon, tangkay, at prutas. Ito ay sanhi ng fungus na Guignardia bidwellii. Ang sakit na ito ay maaaring magpahina sa halaman, magbawas ng produksyon at kalidad ng prutas, at posibleng magpatay ng puno sa mga matinding kaso. Ang fungus ay naiiwan sa mga namatay na bahagi ng halaman at kumakalat sa pamamagitan ng ulan at hangin.",
-"Unknown": "Paumanhin po, ngunit hindi namin nagawang makilala ng aming modelo sa pagkilala ng larawan ang anumang sakit o dahon sa larawang ibinigay ninyo. Maaaring ito ay dahil ang larawan ay hindi ng isang dahon o sakit, o hindi ito sakop ng aming dataset. Mangyaring subukan ang ibang larawan o kumunsulta sa isang propesyonal para sa karagdagang tulong."
+"BLACK MEASLES": "Ang<span> Black Measles </span>ay isang fungal na sakit na nakaka-apekto sa mga puno ng ubas, na nagdudulot ng maliit na itim na spots sa mga dahon, tangkay, at prutas. Ito ay sanhi ng fungus na Phomopsis viticola. Ang sakit na ito ay maaaring magpahina sa halaman, magbawas ng produksyon at kalidad ng prutas, at posibleng magpatay ng puno sa mga matinding kaso. Ang fungus ay naiiwan sa mga namatay na bahagi ng halaman at kumakalat sa pamamagitan ng ulan at hangin.",
+"LEAF BLIGHT": "Ang leaf blight ay isang fungal na sakit na nakaka-apekto sa mga puno ng ubas, na nagdudulot ng mga di-regular na brown spots sa mga dahon. Ito ay sanhi ng fungus na Guignardia bidwellii. Ang sakit na ito ay maaaring magpahina sa halaman, magbawas ng produksyon at kalidad ng prutas, at posibleng magpatay ng puno sa mga matinding kaso. Ang fungus ay naiiwan sa mga namatay na bahagi ng halaman at kumakalat sa pamamagitan ng ulan at hangin.",
+"HEALTHY": "Ang Ubas ay malusog.",
+"BLACK ROT": "Ang black rot ay isang fungal na sakit na nakaka-apekto sa mga puno ng ubas, na nagdudulot ng mga maitim na spots sa mga dahon, tangkay, at prutas. Ito ay sanhi ng fungus na Guignardia bidwellii. Ang sakit na ito ay maaaring magpahina sa halaman, magbawas ng produksyon at kalidad ng prutas, at posibleng magpatay ng puno sa mga matinding kaso. Ang fungus ay naiiwan sa mga namatay na bahagi ng halaman at kumakalat sa pamamagitan ng ulan at hangin.",
+"UNKNOWN": "Paumanhin po, ngunit hindi namin nagawang makilala ng aming modelo sa pagkilala ng larawan ang anumang sakit o dahon sa larawang ibinigay ninyo. Maaaring ito ay dahil ang larawan ay hindi ng isang dahon o sakit, o hindi ito sakop ng aming dataset. Mangyaring subukan ang ibang larawan o kumunsulta sa isang propesyonal para sa karagdagang tulong."
 
 };
 
@@ -91,13 +91,13 @@ init().then(() => {
 function getClassLabel(index) {
 switch (index) {
     case 0:
-    return "Black Measles";
+    return "BLACK MEASLES";
     case 1:
-    return "Leaf Blight";
+    return "LEAF BLIGHT";
     case 2:
-    return "Black Rot";
+    return "BLACK ROT";
     case 3:
-    return "Healthy";
+    return "HEALTHY";
     case 4:
     return "Unknown";
 }
@@ -112,7 +112,7 @@ const imageContainer = document.getElementById("image-container");
 imageContainer.innerHTML = `<img src="${image.src}" alt="Input image">`;
 
 const labelContainer = document.getElementById("label-container");
-labelContainer.innerHTML = `Disease Identified: ${className}`;
+labelContainer.innerHTML = `DISEASE IDENTIFIED: ${className}`;
 
 const definitionContainer = document.getElementById("definition-container");
 definitionContainer.innerHTML = `${classDefinition}`;
@@ -128,11 +128,11 @@ if (className === "Unknown") {
     causeContainer.innerHTML = "Unknown";
 } else if (className === "BLACK MEASLES") {
     treatmentContainer.innerHTML = "Possibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa mga tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
-} else if (className === "Leaf Blight") {
+} else if (className === "LEAF BLIGHT") {
     treatmentContainer.innerHTML = "Possibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
-} else if (className === "Black Rot") {
+} else if (className === "BLACK ROT") {
     treatmentContainer.innerHTML = "Posibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa mga tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
-} else if (className === "Healthy") {
+} else if (className === "HEALTHY") {
     treatmentContainer.innerHTML = "Patuloy na alagaan ang ubas.";
 } else {
     treatmentContainer.innerHTML = "No treatment information available.";
@@ -141,13 +141,13 @@ if (className === "Unknown") {
 
 if (className === "Unknown") {
     causeContainer.innerHTML = "";
-} else if (className === "Black Measles") {
+} else if (className === "BLACK MEASLES") {
     causeContainer.innerHTML = "Sanhi:<br><br>Ang Black Measles ay sanhi ng fungus na Guignardia bidwellii.<br><br>Ang Guignardia bidwellii ay isang uri ng fungus o kabute na sanhi ng sakit sa ubas";
-} else if (className === "Leaf Blight") {
+} else if (className === "LEAF BLIGHT") {
     causeContainer.innerHTML = "Sanhi:<br><br>Ang Leaf Blight ay sanhi ng fungus na Cercospora.";
-} else if (className === "Black Rot") {
+} else if (className === "BLACK ROT") {
     causeContainer.innerHTML = "Sanhi:<br><br>Ang Black Rot ay sanhi ng fungus na Guignardia bidwellii.";
-} else if (className === "Healthy") {
+} else if (className === "HEALTHY") {
     causeContainer.innerHTML = "Ang healthy leaf resulta ng tamang pag-aalaga sa kalusugan ng halaman at pagpapakain ng mga tamang nutrients.";
 } else {
     labelContainer.innerHTML = "Error";
