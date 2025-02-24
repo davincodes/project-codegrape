@@ -346,9 +346,6 @@
   .max-w-sm {
     max-width: var(--container-sm);
   }
-  .transform {
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
   .cursor-default {
     cursor: default;
   }
@@ -967,7 +964,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 body {
-  background-image: url('/pattern-randomized.svg');
+  background-image: url('/svg/pattern-randomized.svg');
   background-position: 90% -25%;
 }
 .hamburger {
@@ -1005,31 +1002,6 @@ body {
 }
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateX(0);
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateY(0);
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateZ(0);
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewX(0);
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewY(0);
 }
 @property --tw-space-y-reverse {
   syntax: "*";
