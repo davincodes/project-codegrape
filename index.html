@@ -22,13 +22,34 @@
             <div class="hidden md:flex space-x-10 font-bold">
                 <a href="" class="hover:text-brightPink">Home</a>
                 <a href="#about" class="hover:text-brightPink">About</a>
-                <a href="#footer" class="hover:text-brightPink">Contact</a>
+                <a href="#details" class="hover:text-brightPink">Contact</a>
             </div>
             <!-- Button Analyze Now -->
             <div class="">
                 <a href="#codegrape"class="hidden text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 hover:bg-brightPink font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 md:block">
                     Detect Disease
                 </a>
+            </div>
+            <!-- Hamburger Icon -->
+            <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+            >
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+                <div
+                id="menu"
+                class="absolute flex-col items-center text-white hidden self-end py-2 space-y-6 mt-[-50px] font-bold bg-grapes sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+                >
+                    <a href="#about">About</a>
+                    <a href="#details">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -53,10 +74,10 @@
     </section>
 
     <section class="" id="codegrape">
-        <div class="w-full h-[100%] mb-5 lg:h-screen content-center items-center p-9 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
+        <div class="w-full h-[100%] mt-4 lg:h-screen content-center items-center bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
             <h1 data-aos="zoom-in"
             data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1500" class="text-6xl font-bold text-white text-center">
+            data-aos-duration="1500" class="mt-4 text-4xl md:text-6xl font-bold text-white text-center">
                 CODEGRAPE IMAGE RECOGNITION
             </h1>
             <p data-aos="zoom-in-up"
@@ -86,7 +107,7 @@
         
         <!-- IMAGE RECOGNITION IMAGE & DEFINITION CONTAINERS -->
         <div class="recognition" id="recognition">
-            <div class="section h-auto w-full">
+            <div class="section w-full">
                 <div class="bg-white">
                     <h2 class="text-4xl text-center mt-10 text-violet-900 font-bold m-4 sm:text-3xl md:text-5xl md:m-15" id="label-container">
                     </h2>
@@ -94,12 +115,18 @@
                 <div class="recognition-all-list container mx-auto flex flex-col lg:flex-row space-x-6">
                     <div class="recognition-list w-auto md:w-[1000px] ms-4" id="image-container">
                     </div>
-                    <div class="flex flex-col space-x-6 lg:mt-[-50px]">
-                        <div class="recognition-list text-white mt-10" id="definition-container">
+                    <div class="flex flex-col space-x-6 lg:mt-[-50px] mx-2.5">
+                        <div data-aos="zoom-in"
+                        data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="1500" class="recognition-list text-white mt-10" id="definition-container">
                         </div>
-                        <div class="recognition-list text-white" id="cause-container">
+                        <div data-aos="zoom-in"
+                        data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="1500" class="recognition-list text-white" id="cause-container">
                         </div>
-                        <div class="recognition-list text-white" id="treatment-container">
+                        <div data-aos="zoom-in"
+                        data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="1500" class="recognition-list text-white" id="treatment-container">
                         </div>
                     </div>
                 </div>
@@ -185,7 +212,7 @@
                 </div>
     </section>
 
-    <footer id="footer" class="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
+    <footer id="details" class="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
         <div class="w-full flex-col px-6 pt-20 lg:flex lg:px-10 xl:px-24">
             <div class="text-zinc-600 cursor-default lg:flex lg:flex-row lg:gap-x-16">
             <div>

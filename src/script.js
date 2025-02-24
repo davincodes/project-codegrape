@@ -1,3 +1,12 @@
+const btn = document.getElementById('menu-btn')
+const nav = document.getElementById('menu')
+
+btn.addEventListener('click', () =>{
+    btn.classList.toggle('open');
+    nav.classList.toggle('flex');
+    nav.classList.toggle('hidden');
+
+})
 
 const fileInput = document.querySelector('#myFileInput');
 const preloader = document.querySelector('#preloader');
@@ -5,6 +14,7 @@ const preloader = document.querySelector('#preloader');
 function startImageRecognition() {
     // Simulate image recognition (you can replace this with actual logic)
     document.getElementById("results-container").classList.remove("hidden");
+
 }
 
 fileInput.addEventListener('change', () => {
@@ -127,11 +137,11 @@ causeContainer.innerHTML = ""; // clear the container before showing new results
 if (className === "UNKNOWN") {
     causeContainer.innerHTML = "UNKNOWN";
 } else if (className === "BLACK MEASLES") {
-    treatmentContainer.innerHTML = "<br>Possibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa mga tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
+    treatmentContainer.innerHTML = "<br>Possibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa mga tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.<br><br>";
 } else if (className === "LEAF BLIGHT") {
-    treatmentContainer.innerHTML = "<br>Possibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
+    treatmentContainer.innerHTML = "<br>Possibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.<br><br>";
 } else if (className === "BLACK ROT") {
-    treatmentContainer.innerHTML = "<br>Posibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa mga tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
+    treatmentContainer.innerHTML = "<br>Posibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa mga tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.<br><br>";
 } else if (className === "HEALTHY") {
     treatmentContainer.innerHTML = "Patuloy na alagaan ang ubas.";
 } else {
