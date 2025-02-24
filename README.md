@@ -1,3 +1,7 @@
+
+![codegrape](https://github.com/user-attachments/assets/1b3dd5c4-b94f-4ab6-9196-4127e8d41a14)
+
+
 # CODEGRAPE : A DEEP LEARNING BASED IMAGE RECOGNITION SYSTEM.
 
 ## Overview
