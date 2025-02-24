@@ -1,5 +1,4 @@
 
-
 const fileInput = document.querySelector('#myFileInput');
 const preloader = document.querySelector('#preloader');
 
@@ -12,7 +11,7 @@ fileInput.addEventListener('change', () => {
     // Show the preloader animation when a file is selected
     preloader.style.display = 'flex';
     document.body.style.overflow = 'hidden'; // Hide scrollbars
-    document.body.style.height = '100vh'; // Set body height to viewport height
+    // document.body.style.height = '100vh'; // Set body height to viewport height
 
     setTimeout(() => {
     // Hide the preloader after 1 second
@@ -128,11 +127,11 @@ causeContainer.innerHTML = ""; // clear the container before showing new results
 if (className === "UNKNOWN") {
     causeContainer.innerHTML = "UNKNOWN";
 } else if (className === "BLACK MEASLES") {
-    treatmentContainer.innerHTML = "Possibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa mga tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
+    treatmentContainer.innerHTML = "<br>Possibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa mga tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
 } else if (className === "LEAF BLIGHT") {
-    treatmentContainer.innerHTML = "Possibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
+    treatmentContainer.innerHTML = "<br>Possibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
 } else if (className === "BLACK ROT") {
-    treatmentContainer.innerHTML = "Posibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa mga tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
+    treatmentContainer.innerHTML = "<br>Posibleng Lunas:<br>Ang pagtatanggal ng mga namatay na bahagi ng halaman at pagsunod sa mga tamang pagsasaka at kulturang pamamahala ng mga halaman ay makakatulong upang maiwasan ang pagkalat ng sakit. Maaari ring gamitin ang mga fungicides upang kontrolin ang fungus, ngunit nag-iiba ang bisa nito depende sa yugto ng sakit at kung gaano kagrabe ang impeksyon.";
 } else if (className === "HEALTHY") {
     treatmentContainer.innerHTML = "Patuloy na alagaan ang ubas.";
 } else {
@@ -143,11 +142,11 @@ if (className === "UNKNOWN") {
 if (className === "UNKNOWN") {
     causeContainer.innerHTML = "";
 } else if (className === "BLACK MEASLES") {
-    causeContainer.innerHTML = "Sanhi:<br><br>Ang Black Measles ay sanhi ng fungus na Guignardia bidwellii.<br><br>Ang Guignardia bidwellii ay isang uri ng fungus o kabute na sanhi ng sakit sa ubas";
+    causeContainer.innerHTML = "<br>Sanhi:<br>Ang Black Measles ay sanhi ng fungus na Guignardia bidwellii.<br>Ang Guignardia bidwellii ay isang uri ng fungus o kabute na sanhi ng sakit sa ubas";
 } else if (className === "LEAF BLIGHT") {
-    causeContainer.innerHTML = "Sanhi:<br><br>Ang Leaf Blight ay sanhi ng fungus na Cercospora.";
+    causeContainer.innerHTML = "<br>Sanhi:<br>Ang Leaf Blight ay sanhi ng fungus na Cercospora.";
 } else if (className === "BLACK ROT") {
-    causeContainer.innerHTML = "Sanhi:<br><br>Ang Black Rot ay sanhi ng fungus na Guignardia bidwellii.";
+    causeContainer.innerHTML = "<br>Sanhi:<br>Ang Black Rot ay sanhi ng fungus na Guignardia bidwellii.";
 } else if (className === "HEALTHY") {
     causeContainer.innerHTML = "Ang healthy leaf resulta ng tamang pag-aalaga sa kalusugan ng halaman at pagpapakain ng mga tamang nutrients.";
 } else {
