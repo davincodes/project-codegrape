@@ -45,32 +45,10 @@ git clone https://github.com/davincodes/project-codegrape.git
 ```
 
 
-## Contributing
-
-Create a new branch for your feature or bug fix:
-
-```bash
-git checkout -b feature-name
-```
-
-Make your changes and commit them:
-
-```bash
-git commit -m 'Description of the changes'
-```
-
-Push the branch to your fork:
-
-```bash
-git push origin feature-name
-```
-
-Open a pull request on GitHub.
-
 ## License
 
 This project is licensed under the MIT License.
 
-Feel free to customize this template further based on the specific details of your project. Add any extra sections, dependencies, or acknowledgments that you find relevant.
+
 
 
