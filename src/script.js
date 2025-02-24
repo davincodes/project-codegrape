@@ -1,4 +1,3 @@
-AOS.init();
 
 
 const fileInput = document.querySelector('#myFileInput');
