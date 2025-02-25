@@ -5,6 +5,7 @@
     body{
         background-image: url('/svg/pattern-randomized.svg');
         background-position: 90% -25%;
+        overflow-x: hidden;
     }
 
     /* Hamburger Menu */
