@@ -22,6 +22,7 @@
             <!-- Menu items -->
             <div class="hidden md:flex space-x-10 font-bold">
                 <a href="" class="hover:text-brightPink">Home</a>
+                <a href="Tutorial" class="hover:text-brightPink">Tutorial</a>
                 <a href="#about" class="hover:text-brightPink">About</a>
                 <a href="#details" class="hover:text-brightPink">Contact</a>
             </div>
@@ -55,24 +56,91 @@
         </div>
     </nav>
 
-    <section id="hero">
-        <div data-aos="zoom-in" data-aos-duration="1000" class="container flex flex-col-reverse mx-auto items-center my-5 md:pb-10 md:flex-row md:space-y-0">
-            <div class="flex flex-col md:text-left mx-4 md:items-start">
-                <h1 class="max-w-md text-6xl mt-4 text-brightPink  font-bold">
+    <section id="hero" class="border-b-10 border-grapes">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="container h-screen flex flex-col mx-auto items-center my-5 md:pb-10 md:flex-col md:space-y-0">
+            <div class="flex flex-col items-center md:text-left mx-4 md:items-start">
+                <h3 class="max-w-md text-6xl mt-4 text-brightPink  font-bold">
                     CODEGRAPE
-                </h1>
-                <h2 class="text-3xl font-bold">
-                    A Deep-Learning Based Image Recognition System for Automated Detection of Grape Leaf Diseases.
-                </h2>
+                </h3>
+                <p class="text-center md:text-left">A Deep learning based image recognition system for automated detection of grape leaf diseases.</p>
             </div>
             <div data-aos="fade-left"
             data-aos-anchor="#example-anchor"
             data-aos-offset="500"
             data-aos-duration="1500" class="">
-                <img width="1000px" src="/img/hero.png" alt="">
+                <img width="500px" src="/img/hero.png" alt="">
             </div>
         </div>
     </section>
+
+    <section class="bg-white" id="tutorial">
+        <div class="font-bold text-brightPink p-5 text-5xl text-center">
+            <h1>HOW TO USE CODEGRAPE</h1>
+        </div>
+        <div class="flex flex-col text-center  md:flex-col">
+            <div class="container flex flex-col-reverse mx-auto items-center my-5 md:pb-10 md:flex-row md:space-y-0">
+                <div data-aos="fade-right" data-aos-duration="1000" class="flex flex-col md:text-left mx-4 md:items-start">
+                    <h1 class="max-w-md text-4xl mt-4 text-brightPink font-bold my-2">
+                        UPLOAD A PHOTO 
+                    </h1>
+                    <h2 class="text-2xl font-bold">
+                        Take a photo of a grape leaf directly using your device’s camera or upload an existing image.
+                    </h2>
+                </div>
+                <div class="">
+                    <img width="1000px" src="img/phonescan.svg" alt="">
+                </div>
+            </div>
+
+            <div class="font-bold p-5 text-5xl text-center">
+            </div>
+            <div class="container flex flex-col-reverse mx-auto items-center my-5 md:pb-10 md:flex-row md:space-y-0">
+                <div class="">
+                    <img width="600px" src="img/Analyze.svg" alt="">
+                </div> 
+                <div data-aos="fade-left" data-aos-duration="1000" class="flex flex-col mb-6 md:text-left mx-4 md:items-start">
+                    <h1 class="max-w-md text-4xl mt-4 text-brightPink font-bold mb-2">
+                        ANALYZE THE IMAGE 
+                    </h1>
+                    <h2 class="text-2xl font-bold">
+                        The system will process the image using Convolutional Neural Networks (CNN) to detect possible diseases.
+                    </h2>
+                </div>
+            </div>
+
+            <div class="container pt-5 flex flex-col-reverse mx-auto items-center my-5 md:pb-10 md:flex-row md:space-y-0">
+                <div data-aos="fade-right" data-aos-duration="1000" class="flex flex-col md:text-left mx-4 md:items-start">
+                    <h1 class="max-w-md text-4xl mt-4 text-brightPink  font-bold mb-2">
+                        VIEW DIAGNOSIS
+                    </h1>
+                    <h2 class="text-2xl font-bold">
+                        The detected disease, along with its description and potential impact, will be displayed on the screen.
+                    </h2>
+                </div>
+                <div class="">
+                    <img width="1000px" src="img/diagnosis.svg" alt="">
+                </div>
+            </div>
+
+            <div class="font-bold p-5 text-5xl text-center">
+            </div>
+            <div class="container b-5 flex flex-col-reverse mx-auto items-center my-5 md:pb-10 md:flex-row md:space-y-0">
+                <div class="">
+                    <img width="1000px" src="img/treatment.svg" alt="">
+                </div> 
+                <div data-aos="fade-left" data-aos-duration="1000" class="flex flex-col md:text-left mx-4 md:items-start">
+                    <h1 class="max-w-md text-4xl mt-4 text-brightPink font-bold mb-2">
+                        GET TREATMENT RECOMMENDATIONS
+                    </h1>
+                    <h2 class="text-2xl font-bold mb-6">
+                        Suggested treatments and preventive measures will be provided to help manage and prevent the disease.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
     <section class="" id="codegrape">
         <div class="w-full h-[100%] mt-4 lg:h-screen content-center items-center bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
@@ -134,7 +202,6 @@
             </div>
         </div>
     </section>
-
 
     <section id="about">
         <div class="container mx-auto">
