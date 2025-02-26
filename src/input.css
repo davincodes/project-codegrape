@@ -1,11 +1,13 @@
     @import "tailwindcss";
     @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 
-
+    html{
+        overflow-x: hidden !important;
+    }
     body{
         background-image: url('/svg/pattern-randomized.svg');
         background-position: 90% -25%;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 
     /* Hamburger Menu */
