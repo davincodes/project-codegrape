@@ -21,9 +21,10 @@ Technologies Used:
 - JavaScript
 - HTML
 - CSS
-- Tailwind
+- Tailwind CSS
 - Vercel
-- Python in Machine Learning.
+- Machine Learning
+- Convolutional Neural Networks (CNN)
 
 Key Features:
 
@@ -44,11 +45,6 @@ Clone the repository:
 ```bash
 git clone https://github.com/davincodes/project-codegrape.git
 ```
-
-
-## License
-
-This project is licensed under the MIT License.
 
 
 
